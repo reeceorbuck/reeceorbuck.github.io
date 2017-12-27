@@ -14,7 +14,7 @@ description: A Jekyll quick start to getting up and going with the indieweb.
 webmentions:
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://reeceorbuck.github.io" # the base hostname & protocol for your site
 twitter_username: reeceorbuck
 github_username:  reeceorbuck
 instagram_username: reeceorbuck
