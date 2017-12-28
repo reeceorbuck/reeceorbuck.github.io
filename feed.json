@@ -24,10 +24,9 @@ layout: null
             "title": {{ post.title | jsonify }},
             "summary": {{ post.seo_description | jsonify }},
             "content_text": {{ post.content | strip_html | strip_newlines | jsonify }},
-            "content_html": {{ post.content | strip_newlines | jsonify }} <p> {% if post.mf-photo.size > 1 %}<img src={{ post.mf-photo | jsonify }}/></p>,
+            "content_html": {{ post.content | strip_newlines | jsonify }} <p> {% if post.mf-photo.size > 0 %}<img src={{ post.mf-photo | jsonify }}/></p>,
             "url": "{{ post.url | absolute_url }}",
-            {% if post.mf-photo.size > 1 %}"image": {{ post.mf-photo[0] | jsonify }},{% endif %}
-            {% if post.image.size > 1 %}"image": {{ post.image | jsonify }},{% endif %}
+            {% if post.mf-photo.size > 0 %}"image": {{ post.mf-photo | jsonify }},{% endif %}
             {% if post.link.size > 1 %}"external_url": "{{ post.link }}",{% endif %}
             {% if post.banner.size > 1 %}"banner_image": "{{ post.banner }}",{% endif %}
             {% if post.tags.size > 1 %}"tags": {{ post.tags | jsonify }},{% endif %}
