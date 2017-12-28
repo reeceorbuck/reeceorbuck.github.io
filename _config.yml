@@ -7,14 +7,14 @@
 
 # Site settings
 lang: en
-title: Reece blog
+title: reece.work
 email: reeceorbuck@gmail.com
-description: A Jekyll quick start to getting up and going with the indieweb.
+description: A blog by Reece
 # Webmentions - leave blank (remove "yes") if you would not like to receive & display webmentions from other sites
 webmentions:
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://reeceorbuck.github.io" # the base hostname & protocol for your site
+url: "http://reece.work" # the base hostname & protocol for your site
 twitter_username: reeceorbuck
 github_username:  reeceorbuck
 instagram_username: reeceorbuck
@@ -29,10 +29,7 @@ facebook_url: http://facebook.com
 
 
 # Can be over ridden with author: in Front Matter
-author: Reece Orbuck
-
-# Expecting a full url, not relative to site.url
-author_img: https://avatars3.githubusercontent.com/u/3083652
+author: Reece
 
 # Build settings
 markdown: kramdown
