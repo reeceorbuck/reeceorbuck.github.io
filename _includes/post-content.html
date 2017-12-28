@@ -8,13 +8,6 @@
         </video>
       {% endfor %}
     </div>
-  {% elsif post.mf-photo != null %}
-    <div class="media">
-      {% for photo in post.mf-photo %}
-        <img class="u-photo" src="{{photo}}" alt="" />
-      {% endfor %}
-    </div>
-  {% endif %}
 
   {% if post.title != '' %}
     <header>
@@ -45,30 +38,6 @@
       {{ content }}
     {% endif %}
   </div>
-
-  {% if post.mf-syndication != null %}
-    <div class="elsewhere linklist">
-        <h3>Also posted on:</h3>
-      <ul>
-        {% for elsewhere in post.mf-syndication %}
-          <li><a href="{{ elsewhere }}" class="u-syndication" {% if standalone == true %}rel="syndication"{% endif %}>
-            {{ elsewhere | remove_first:'http://'  | remove_first:'https://' | remove_first:'www.' | split:'.' | first | capitalize }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
-  {% endif %}
-
-  {% if post.persontags != null %}
-    <div class="persons linklist">
-        <h3>Mentioned:</h3>
-      <ul>
-        {% for elsewhere in post.persontags %}
-          <li><a href="{{ elsewhere }}" class="u-category h-card">
-            {{ elsewhere | remove_first:'http://'  | remove_first:'https://' | remove_first:'www.' | remove_first:'.com' | split:'/' | first }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
-  {% endif %}
 
   {% if post.submitto != null %}
     <div class="submitted-to linklist">
