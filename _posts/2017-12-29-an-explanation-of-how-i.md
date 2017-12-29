@@ -26,13 +26,14 @@ Now lastly, adding a json.feed to the website allows posts to appear in the micr
 You need to add identifiers so indieAuth can use one to verify you. Also micro.blog requires one to prove it&#39;s your site so heres the full html of mine
 
 ```html
-&lt;link rel=&quot;authorization_endpoint&quot; href=&quot;https://indieauth.com/auth&quot;&gt;
-    &lt;link rel=&quot;token_endpoint&quot; href=&quot;https://tokens.indieauth.com/token&quot;&gt;
-    &lt;link rel=&quot;micropub&quot; href=&quot;http://micropub.azurewebsites.net/micropub/main&quot;&gt;
-    &lt;link href=&quot;mailto:reeceorbuck@me.com&quot; rel=&quot;me&quot; /&gt;
-    &lt;link href=&quot;https://micro.blog/reece&quot; rel=&quot;me&quot; /&gt;
-    &lt;link href=&quot;https://twitter.com/reeceorbuck&quot; rel=&quot;me&quot; /&gt;
-    &lt;link href=&quot;https://instagram.com/reeceorbuck&quot; rel=&quot;me&quot; /&gt;
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+	<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+	<link rel="micropub" href="http://micropub.azurewebsites.net/micropub/main">
+	
+	<link href="mailto:reeceorbuck@me.com" rel="me" />
+	<link href="https://micro.blog/reece" rel="me" />
+	<link href="https://twitter.com/reeceorbuck" rel="me" />
+	<link href="https://instagram.com/reeceorbuck" rel="me" />
 ```
 
 ## Other questions I have: 
