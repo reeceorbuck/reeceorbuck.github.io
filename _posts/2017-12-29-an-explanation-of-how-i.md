@@ -6,7 +6,7 @@ slug: an-explanation-of-how-i
 ---
 This post is designed to remind myself exactly how I set this blog up, for when inevitably something goes wrong with it.
 
-Micro.blog has two options for operating your blog, the best way is to let @manton host it for you, but if you are more adventurous you can try to host it yourself. Many tutorials will not specify exactly which option they are helping you with so be careful.
+Micro.blog has two options for operating your blog, the best way is to let [@manton](manton.micro.blog) host it for you, but if you are more adventurous you can try to host it yourself. Many tutorials will not specify exactly which option they are helping you with so be careful.
 
 So because I am adventurous, [reece.work](http://reece.work) is self hosted on GitHub pages and is a static Jekyll blog. Rather than having to build the site on my own machine, GitHub has a nifty feature that it builds over there, automatically once anything is committed to the repository. They also provide this service for free, and allow you to link your custom domain to it.
 
@@ -22,7 +22,7 @@ Also token endpoint is [](https://tokens.indieauth.com/token), which is a servic
 
 Now lastly, adding a json.feed to the website allows posts to appear in the micro.blog timeline once I added the site to my account.
 
-##Side note about html tags to add to the blog home page
+## Side note about html tags to add to the blog home page
 You need to add identifiers so indieAuth can use one to verify you. Also micro.blog requires one to prove it&#39;s your site so heres the full html of mine
 
 ```html
@@ -35,16 +35,18 @@ You need to add identifiers so indieAuth can use one to verify you. Also micro.b
     &lt;link href=&quot;https://instagram.com/reeceorbuck&quot; rel=&quot;me&quot; /&gt;
 ```
 
-##Final words
-So thats where I&#39;m at right now. I can post from the various micro.blog apps, editorial on my iPad and web apps such as [Quill](https://quill.p3k.io). I haven&#39;t been able to get it to work with MarsEdit yet, but I think at this stage it only works with micro.blog hosted blogs as it doesn&#39;t support micropub.
-
-###Other questions I have: 
+## Other questions I have: 
 As in, things that I&#39;ll have to figure out as time goes on:
 
-*What are the best practice for images? The micro.blog feed only shows images that appear as inline html inside the content but I don&#39;t know whether they should be put in at the start or the end of text content, or if it doesn&#39;t matter. When posting images from the apps there&#39;s no way to specify where an image would appear inline.
-*I haven&#39;t figured out comments (through webmentions) yet. 
-*Also when replying to someone else&#39;s post I&#39;m not sure whether this runs through my site at all.
-*Editing. I can do this directly through the markdown file on the site, but am unsure how that would propagate through the micro.blog feed. Also if post editing is included in the micro.blog apps I&#39;m not sure if this will be able to integrate with my bridge solution.
-*Can I tag posts?
-*Not entirely sure how mentions work at all, such as if they need to be a reply to an existing post (and if not, where in the world are they), but I&#39;ll have to wait until someone actually mentions me I guess.
++ What are the best practice for images? The micro.blog feed only shows images that appear as inline html inside the content but I don&#39;t know whether they should be put in at the start or the end of text content, or if it doesn&#39;t matter. When posting images from the apps there&#39;s no way to specify where an image would appear inline.
++ I haven&#39;t figured out comments (through webmentions) yet. 
+* Also when replying to someone else&#39;s post I&#39;m not sure whether this runs through my site at all.
+* Editing. I can do this directly through the markdown file on the site, but am unsure how that would propagate through the micro.blog feed. Also if post editing is included in the micro.blog apps I&#39;m not sure if this will be able to integrate with my bridge solution.
+* Can I tag posts?
+* Not entirely sure how mentions work at all, such as if they need to be a reply to an existing post (and if not, where in the world are they), but I&#39;ll have to wait until someone actually mentions me I guess.
+
+## Final words
+So thats where I&#39;m at right now. I can post from the various micro.blog apps, editorial on my iPad and web apps such as [Quill](https://quill.p3k.io). I haven&#39;t been able to get it to work with MarsEdit yet, but I think at this stage it only works with micro.blog hosted blogs as it doesn&#39;t support micropub.
+
+
 
