@@ -5,5 +5,5 @@ permalink: /about/
 ---
 
 Greetings from Perth, Australia.
-Email me at [mailto:reeceorbuck@me.com](reeceorbuck@me.com)
+Email me at [reeceorbuck@me.com](mailto:reeceorbuck@me.com)
 Or even better at micro.blog: [@reece](http://micro.blog/reece)
