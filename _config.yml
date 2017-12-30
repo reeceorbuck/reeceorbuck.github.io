@@ -39,4 +39,4 @@ gems:
   - jekyll-seo-tag
   - jekyll-gist
 
-paginate: 5
+paginate: 25
