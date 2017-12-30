@@ -4,4 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Edit this page with your own information.
+Greetings from Perth, Australia.
+Email me at [mailto:reeceorbuck@me.com](reeceorbuck@me.com)
+Or even better at micro.blog: [@reece](http://micro.blog/reece)
