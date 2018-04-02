@@ -16,7 +16,7 @@ layout: default
 </div>
 
 <div class="posts">
-  {% assign longPosts = site.posts | where: "title", "toto" %}
+  {% assign longPosts = site.posts | where_exp:"post", "post.title != ''" %}
   {% for post in longPosts"%}
     {% include post.html post=post %}
   {% endfor %}
