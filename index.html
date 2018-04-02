@@ -6,7 +6,7 @@ layout: default
   {% assign postsByDay = 
     site.posts | where_exp:"post", "post.title == ''" | group_by_exp:"post", "post.date | date: '%A, %B %e, %Y'" %}
     {% for day in postsByDay %}
-      <div class="u-url">{{ day.name }}</div>
+      <div class="u-url post-date">{{ day.name }}</div>
         <ul>
           {% for post in day.items %}
             {% include micropost.html post=post %}
@@ -17,7 +17,7 @@ layout: default
 
 <div class="posts">
   {% assign longPosts = site.posts | where_exp:"post", "post.title != ''" %}
-  {% for post in longPosts"%}
+  {% for post in longPosts %}
     {% include post.html post=post %}
   {% endfor %}
 </div>
