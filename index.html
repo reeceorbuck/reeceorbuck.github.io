@@ -4,7 +4,7 @@ layout: default
 
 <div class="posts">
   {% assign postsByDay = 
-    site.posts | group_by_exp:"post", "post.date | date: '%A, %B %e, %Y'" %}
+    site.posts | where_exp:"post", "post.title == ''" | group_by_exp:"post", "post.date | date: '%A, %B %e, %Y'" %}
     {% for day in postsByDay %}
       <h1>{{ day.name }}</h1>
         <ul>
