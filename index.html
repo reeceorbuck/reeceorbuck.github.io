@@ -8,8 +8,14 @@ layout: default
     {% for day in postsByDay %}
       <div class="u-url post-date">{{ day.name }}</div>
         <ul>
-          {% for post in day.items %}
+          {% assign sorted = day.items | reverse %}
+          {% for post in sorted %}
+            {% if post.index != 0 %}
+              &#9658;
+            {% endif %}
+          
             {% include micropost.html post=post %}
+            &emsp; 
           {% endfor %}
         </ul>
     {% endfor %}
