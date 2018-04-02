@@ -16,7 +16,8 @@ layout: default
 </div>
 
 <div class="posts">
-  {% for post in paginator.posts | where_exp:"post", "post.title != ''"%}
+  {% assign longPosts = paginator.posts | where_exp:"post", "post.title != '' %}
+  {% for post in longPosts | "%}
     {% include post.html post=post %}
   {% endfor %}
 </div>
