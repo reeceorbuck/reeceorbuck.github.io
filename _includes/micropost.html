@@ -1,0 +1,12 @@
+{% assign post = include.post %}
+
+
+<article class="post">
+	
+	
+{% if post.mf-like-of != null %}
+  {% include post-like.html post=post %}
+{% else %}
+  {% include post-content.html post=post %}
+{% endif %}
+</article>
