@@ -9,7 +9,7 @@
 }
 
 .content, .banner, .site-footer {
-    padding: 2.5% 20%
+    padding: 2.5%
 }
 
 @media (max-width: 1000px) {
@@ -125,6 +125,19 @@ blockquote p::before {
 
 blockquote p::after {
     content: '\201D'
+}
+
+.posts {
+    padding: 4%;
+    width: 320px;
+}
+
+.fullposts {
+    flex-grow: 3
+}
+
+.microposts {
+    flex-grow: 1   
 }
 
 .post ol {
@@ -338,8 +351,9 @@ iframe, img, embed, object, video {
 }
 
 .content {
-    display: inline-block;
-    width: 100%
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .content article {
@@ -484,4 +498,9 @@ iframe, img, embed, object, video {
     display: inline-block;
     text-align: center;
     width: 100%
+}
+
+.journalDate {
+    margin-top: 30px;
+    margin-bottom: 10px;
 }

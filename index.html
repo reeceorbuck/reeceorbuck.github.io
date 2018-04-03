@@ -2,11 +2,11 @@
 layout: default
 ---
 
-<div class="posts">
+<div class="posts microposts">
   {% assign postsByDay = 
     site.posts | where_exp:"post", "post.title == ''" | group_by_exp:"post", "post.date | date: '%A, %B %e, %Y'" %}
     {% for day in postsByDay %}
-      <div class="u-url post-date">{{ day.name }}</div>
+      <div class="journalDate post-date">{{ day.name }}</div>
         <ul>
           {% assign sorted = day.items | reverse %}
           {% for post in sorted %}
@@ -21,7 +21,7 @@ layout: default
     {% endfor %}
 </div>
 
-<div class="posts">
+<div class="posts fullposts">
   {% assign longPosts = site.posts | where_exp:"post", "post.title != ''" %}
   {% for post in longPosts %}
     {% include post.html post=post %}
