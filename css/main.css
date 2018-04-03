@@ -149,6 +149,7 @@ blockquote p::after {
     padding: 40px;
     width: 320px;
     padding-top: 250px;
+    flex-shrink: 1;
 }
 .featureHeader {
     font-size: 30px;
