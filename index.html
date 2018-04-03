@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div class="posts microposts">
+  <div class="journalHeader">Journal</div>
   {% assign postsByDay = 
     site.posts | where_exp:"post", "post.title == ''" | group_by_exp:"post", "post.date | date: '%A, %B %e, %Y'" %}
     {% for day in postsByDay %}
@@ -22,6 +23,22 @@ layout: default
 </div>
 
 <div class="posts fullposts">
+  <header class="site-header" role="banner">
+		<a class="site-title" href="{{ site.github.url }}/">{{ site.title }}</a>
+		<nav class="site-nav" role="navigation">
+			<ul>
+				{% assign pages_list = site.pages %}
+      	 {% for node in pages_list %}
+         {% if node.title != null %}
+         {% if node.layout == "page" %}
+				 <li itemprop="url"><a  class="{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a></li>
+				 {% endif %}
+	 {% endif %}
+ {% endfor %}
+			</ul>
+		</nav>
+	</header>
+  <div class="featureHeader">Feature</div>
   {% assign longPosts = site.posts | where_exp:"post", "post.title != ''" %}
   {% for post in longPosts %}
     {% include post.html post=post %}

@@ -1,22 +1,41 @@
 .site-header {
-    padding: 3% 6%
+    /* padding: 3% 6% 3% 6%; */
+    position: absolute;
+    top: 0px;
+    margin-top: 40px;
+    margin-left: -146px;
 }
 
-@media (max-width: 1000px) {
+.site-header {
+    flex-wrap: wrap;
+}
+
+.site-header .site-nav {
+    flex-basis: 100%;
+    order: 2;
+    text-align: left;
+    padding-left: 110px;
+}
+
+@media (max-width: 819px) {
     .site-header {
-        padding: 3%
+        margin-left: 0px;
+        
+    }
+    .site-header .site-nav {
+        padding-left: 0px;
     }
 }
 
-.content, .banner, .site-footer {
+/* .content, .banner, .site-footer {
     padding: 2.5%
-}
+} */
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
     .content, .banner, .site-footer {
         padding: 7.5% 12.5%
     }
-}
+} */
 
 .icon:hover {
     border-radius: 100%;
@@ -81,9 +100,8 @@ body {
 }
 
 .site-title {
-    font-size: 30px;
-    font-size: 1.875rem;
-    color: #0b1a26;
+    font-size: 2.5rem;
+    color: #c60000;
     text-decoration: none
 }
 
@@ -128,16 +146,29 @@ blockquote p::after {
 }
 
 .posts {
-    padding: 4%;
+    padding: 40px;
     width: 320px;
+    padding-top: 250px;
+}
+.featureHeader {
+    font-size: 30px;
+    color: #c60000;
 }
 
 .fullposts {
-    flex-grow: 3
+    flex-grow: 5;
+    width: 500px;
 }
 
+.journalHeader {
+    font-size: 30px;
+    color: #c60000;
+    margin-bottom: -30px;
+}
 .microposts {
-    flex-grow: 1   
+    flex-grow: 1;
+    background: rgb(13, 13, 13);
+    color: rgb(179, 179, 179);
 }
 
 .post ol {
@@ -311,21 +342,21 @@ iframe, img, embed, object, video {
 
 @media (max-width: 600px) {
     .site-header {
-        flex-wrap: wrap
+        flex-wrap: wrap;
     }
 
     .site-header .site-nav {
         flex-basis: 100%;
         order: 2;
-        text-align: center
+        text-align: left
     }
 
     .site-header .site-nav a {
-        font-size: 24px;
+        /* font-size: 24px;
         font-size: 1.5rem;
         color: #0b1a26;
         letter-spacing: 2px;
-        text-decoration: none
+        text-decoration: none */
     }
 }
 
@@ -345,7 +376,7 @@ iframe, img, embed, object, video {
     font-size: 18px;
     font-size: 1.125rem;
     display: inline-block;
-    padding: 20px;
+    /* padding: 20px; */
     text-decoration: none;
     text-transform: uppercase
 }
@@ -353,7 +384,7 @@ iframe, img, embed, object, video {
 .content {
     display: flex;
     width: 100%;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
 }
 
 .content article {
@@ -503,4 +534,5 @@ iframe, img, embed, object, video {
 .journalDate {
     margin-top: 30px;
     margin-bottom: 10px;
+    color: rgb(88, 88, 88);
 }
