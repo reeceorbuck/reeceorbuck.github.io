@@ -17,16 +17,6 @@
     padding-left: 110px;
 }
 
-@media (max-width: 819px) {
-    .site-header {
-        margin-left: 0px;
-        
-    }
-    .site-header .site-nav {
-        padding-left: 0px;
-    }
-}
-
 /* .content, .banner, .site-footer {
     padding: 2.5%
 } */
@@ -149,7 +139,6 @@ blockquote p::after {
     padding: 40px;
     width: 320px;
     padding-top: 250px;
-    flex-shrink: 1;
 }
 .featureHeader {
     font-size: 30px;
@@ -536,4 +525,23 @@ iframe, img, embed, object, video {
     margin-top: 30px;
     margin-bottom: 10px;
     color: rgb(88, 88, 88);
+}
+
+@media (max-width: 819px) {
+    .site-header {
+        margin-left: 0px;
+        
+    }
+    .site-header .site-nav {
+        padding-left: 0px;
+    }
+    .fullposts {
+        width: inherit;
+    }
+}
+
+@media (min-width: 1280px) {
+    #wrapper {
+        max-width: 1280px
+    }
 }
