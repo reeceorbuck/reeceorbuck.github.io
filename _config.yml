@@ -40,3 +40,6 @@ plugins:
   - jekyll-gist
 
 paginate: 25
+
+# Google Analytics
+google_analytics: UA-131735588-1
